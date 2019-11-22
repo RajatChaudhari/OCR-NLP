@@ -1,0 +1,69 @@
+{"label":"PHONE","pattern":[{"ORTH":"Tel"},{"ORTH":":"},{"ORTH":{"REGEX":"\\d"}},{"ORTH":"-"},{"ORTH":{"REGEX":"\\d"}},{"ORTH":{"REGEX":"\\d"}}],"id":"phone"}
+{"label":"PHONE","pattern":[{"ORTH":"Ph"},{"ORTH":":"},{"ORTH":{"REGEX":"\\d"}},{"ORTH":"-"},{"ORTH":{"REGEX":"\\d"}}],"id":"phone"}
+{"label":"PHONE","pattern":[{"ORTH":"Tel"},{"ORTH":":"},{"ORTH":{"REGEX":"\\d"}},{"ORTH":"-"},{"ORTH":{"REGEX":"\\d"}}],"id":"phone"}
+{"label":"PHONE","pattern":[{"ORTH":"Phone"},{"ORTH":":"},{"ORTH":{"REGEX":"\\d"}},{"ORTH":"-"},{"ORTH":{"REGEX":"\\d"}}],"id":"phone"}
+{"label":"PHONE","pattern":[{"ORTH":"Ph"},{"ORTH":":"},{"ORTH":{"REGEX":"\\d"}}],"id":"phone"}
+{"label":"PHONE","pattern":[{"ORTH":"Phone"},{"ORTH":":"},{"ORTH":{"REGEX":"\\d"}}],"id":"phone"}
+{"label":"PHONE","pattern":[{"ORTH":"Tel"},{"ORTH":":"},{"ORTH":{"REGEX":"\\d"}}],"id":"phone"}
+{"label":"PHONE","pattern":[{"ORTH":{"REGEX":"(Ph:\\d{0,3})"}},{"ORTH":"-"},{"ORTH":{"REGEX":"\\d"}}],"id":"phone"}
+{"label":"PHONE","pattern":[{"ORTH":{"REGEX":"(Phone:\\d{0,3})"}},{"ORTH":"-"},{"ORTH":{"REGEX":"\\d"}}],"id":"phone"}
+{"label":"PHONE","pattern":[{"ORTH":{"REGEX":"(Tel:\\d{0,3})"}},{"ORTH":"-"},{"ORTH":{"REGEX":"\\d"}}],"id":"phone"}
+{"label":"PHONE","pattern":[{"ORTH":"Phone"},{"ORTH":":"},{"ORTH":{"REGEX":"\\d"}},{"ORTH":"-"},{"ORTH":{"REGEX":"\\d"}},{"ORTH":"-"},{"ORTH":{"REGEX":"\\d"}},{"ORTH":{"REGEX":"\\d"}}],"id":"PHONE"}
+{"label":"PHONE","pattern":[{"ORTH":"Tel"},{"ORTH":":"},{"ORTH":{"REGEX":"\\d"}},{"ORTH":"-"},{"ORTH":{"REGEX":"\\d"}},{"ORTH":{"REGEX":"\\d"}}],"id":"PHONE"}
+{"label":"PHONE","pattern":[{"ORTH":{"REGEX":"(Ph:\\d)"}}],"id":"PHONE"}
+{"label":"PHONE","pattern":[{"ORTH":{"REGEX":"(Phone:\\d)"}}],"id":"PHONE"}
+{"label":"PHONE","pattern":[{"ORTH":{"REGEX":"(Tel:\\d)"}}],"id":"PHONE"}
+{"label":"GST","pattern":[{"ORTH":"GSTIN"},{"ORTH":":"},{}],"id":"GST"}
+{"label":"GST","pattern":[{"ORTH":"GSTIN_"},{"ORTH":":"},{}],"id":"GST"}
+{"label":"GST","pattern":[{"ORTH":"VAT"},{"ORTH":"No"},{"ORTH":":"},{}],"id":"GST"}
+{"label":"EMAIL","pattern":[{"ORTH":"E"},{"ORTH":"-"},{"ORTH":"mail"},{"ORTH":":"},{}],"id":"EMAIL"}
+{"label":"EMAIL","pattern":[{"ORTH":"Email"},{"ORTH":":"},{}],"id":"EMAIL"}
+{"label":"EMAIL","pattern":[{"ORTH":{"REGEX":"(Email:)"}}],"id":"EMAIL"}
+{"label":"EMAIL","pattern":[{"ORTH":{"REGEX":"\\S+@\\S+\\.\\S+"}}],"id":"EMAIL"}
+{"label":"INVOICE","pattern":[{"ORTH":"INVOICE"},{"ORTH":{"REGEX":"([No NO no # ])"}},{}],"id":"INVOICE"}
+{"label":"INVOICE","pattern":[{"ORTH":"Invoice"},{"ORTH":{"REGEX":"([No NO no # ])"}},{}],"id":"INVOICE"}
+{"label":"INVOICE","pattern":[{"ORTH":{"REGEX":"(A-Z0-9)"}},{"ORTH":{"REGEX":"-"}},{"ORTH":{"REGEX":"[0-9]{1,4}/[0-9]{1,4}"}}],"id":"INVOICE"}
+{"label":"INVOICE","pattern":[{"ORTH":"INVOICE"},{"ORTH":{"REGEX":"[No NO no # ]?"}},{"ORTH":{"REGEX":":?"}},{},{"ORTH":"-"},{}],"id":"INVOICE"}
+{"label":"INVOICE","pattern":[{"lower":"invoice"},{"lower":"no"},{"lower":{"REGEX":":?"}},{}],"id":"INVOICE"}
+{"label":"INVOICE","pattern":[{"lower":"invoice"},{"lower":"no"},{"lower":"."},{"lower":{"REGEX":":?"}},{}],"id":"INVOICE"}
+{"label":"INVOICE","pattern":[{"lower":"invoice"},{"lower":"no"},{"lower":"."},{"lower":{"REGEX":":?"}},{},{"ORTH":"-"},{}],"id":"INVOICE"}
+{"label":"PO","pattern":[{"ORTH":"PO"},{"ORTH":"No"},{"ORTH":{"REGEX":":?"}},{},{"ORTH":{"REGEX":"-?"}},{"ORTH":{"REGEX":"\\d"}}],"id":"PO"}
+{"label":"PO","pattern":[{"ORTH":"PO"},{"ORTH":"Details"},{"ORTH":{"REGEX":":?"}},{"ORTH":{"REGEX":"\\d"}}],"id":"PO"}
+{"label":"PO","pattern":[{"ORTH":"P.O"},{"ORTH":".No"},{"ORTH":{"REGEX":":?"}},{"ORTH":{"REGEX":"\\d"}}],"id":"PO"}
+{"label":"PO","pattern":[{"ORTH":"Pur"},{"ORTH":"No"},{"ORTH":{"REGEX":":?"}},{"ORTH":{"REGEX":"\\d"}}],"id":"PO"}
+{"label":"PO","pattern":[{"ORTH":"Order"},{"ORTH":"No"},{"ORTH":{"REGEX":":?"}},{"ORTH":{"REGEX":"\\d"}}],"id":"PO"}
+{"label":"PO","pattern":[{"ORTH":"Purchase"},{"ORTH":"Order"},{"ORTH":"No"},{"ORTH":":"},{"ORTH":{"REGEX":"\\d"}}],"id":"PO"}
+{"label":"TOTALAMOUNT","pattern":[{"ORTH":"Total"},{"ORTH":{"REGEX":"\\d"}}],"id":"TOTALAMOUNT"}
+{"label":"TOTALAMOUNT","pattern":[{"ORTH":"Total"},{"ORTH":"Amount"},{"ORTH":{"REGEX":"\\d"}}],"id":"TOTALAMOUNT"}
+{"label":"TOTALAMOUNT","pattern":[{"ORTH":"Total:-"},{"ORTH":{"REGEX":"\\d"}}],"id":"TOTALAMOUNT"}
+{"label":"TOTALAMOUNT","pattern":[{"ORTH":"Grand"},{"ORTH":"Total"},{"ORTH":{"REGEX":"\\d"}}],"id":"TOTALAMOUNT"}
+{"label":"TOTALAMOUNT","pattern":[{"ORTH":"Grand"},{"ORTH":"-"},{"ORTH":"Total"},{"ORTH":{"REGEX":"\\d"}}],"id":"TOTALAMOUNT"}
+{"label":"ACCOUNTNO","pattern":[{"ORTH":"Account"},{"ORTH":"No"},{"ORTH":{"REGEX":".?"}},{"ORTH":":"},{"ORTH":{"REGEX":"\\d"}}],"id":"BANK"}
+{"label":"ACCOUNTNO","pattern":[{"ORTH":"A"},{"ORTH":"/"},{"ORTH":{"REGEX":"[C c]"}},{"ORTH":{"REGEX":"[NO No]"}},{"ORTH":{"REGEX":".?"}},{"ORTH":{"REGEX":":?"}},{"ORTH":{"REGEX":"\\d"}}],"id":"BANK"}
+{"label":"ACCOUNTNO","pattern":[{"ORTH":"A"},{"ORTH":"/"},{"ORTH":{"REGEX":"[C c]"}},{"ORTH":{"REGEX":"[NO No]"}},{"ORTH":{"REGEX":".?"}},{"ORTH":{"REGEX":"\\d"}}],"id":"BANK"}
+{"label":"IFSC","pattern":[{"ORTH":"IFSC"},{"ORTH":"Code"},{"ORTH":":"},{"ORTH":{"REGEX":"\\s?"}},{"ORTH":{"REGEX":"[A-Z0-9]"}}],"id":"BANK"}
+{"label":"IFSC","pattern":[{"ORTH":"IFSC"},{"ORTH":{"REGEX":"[CODE Code]"}},{"ORTH":":"},{"ORTH":{"REGEX":"[A-Z0-9]"}}],"id":"BANK"}
+{"label":"IFSC","pattern":[{"ORTH":"IFS"},{"ORTH":"Code"},{"ORTH":":"},{"ORTH":{"REGEX":"\\s?"}},{"ORTH":{"REGEX":"[A-Z0-9]"}}],"id":"BANK"}
+{"label":"BRANCH","pattern":[{"ORTH":"BRANCH"},{"ORTH":{"REGEX":"[:]"}},{}],"id":"BANK"}
+{"label":"BRANCH","pattern":[{"ORTH":"Branch"},{"ORTH":{"REGEX":"[:]"}},{}],"id":"BANK"}
+{"label":"BANKNAME","pattern":[{"ORTH":"Bank"},{"ORTH":{"REGEX":"[:]"}},{"ORTH":{"REGEX":"\\s?"}},{}],"id":"BANK"}
+{"label":"BANKNAME","pattern":[{"ORTH":"Bank"},{"ORTH":"Name"},{"ORTH":{"REGEX":"[: -]?"}},{}],"id":"BANK"}
+{"label":"INVOICEDATE","pattern":[{"lower":"invoice"},{"lower":"date"},{"ORTH":":"},{}],"id":"DATE"}
+{"label":"INVOICEDATE","pattern":[{"lower":"invoice"},{"lower":"date"},{"ORTH":{"REGEX":"(\\d{1,2}/\\d{1,2}/[\\d{2} \\d{4}])"}}],"id":"DATE"}
+{"label":"INVOICEDATE","pattern":[{"lower":"date"},{"ORTH":{"REGEX":"(\\d{1,2}/\\d{1,2}/[\\d{2} \\d{4}])"}}],"id":"DATE"}
+{"label":"INVOICEDATE","pattern":[{"ORTH":{"REGEX":"(\\d{1,2}/\\d{1,2}/[\\d{2} \\d{4}])"}}],"id":"DATE"}
+{"label":"INVOICEDATE","pattern":[{"lower":"invoice"},{"lower":"date"},{"ORTH":{"REGEX":"(\\d{1,2} - \\d{1,2} - [\\d{2} \\d{4}])"}}],"id":"DATE"}
+{"label":"INVOICEDATE","pattern":[{"lower":"date"},{"ORTH":{"REGEX":"(\\d{1,2} - \\d{1,2} - [\\d{2} \\d{4}])"}}],"id":"DATE"}
+{"label":"INVOICEDATE","pattern":[{"ORTH":{"REGEX":"(\\d{1,2} - \\d{1,2} - [\\d{2} \\d{4}])"}}],"id":"DATE"}
+{"label":"SUBAMOUNT","pattern":[{"ORTH":"Sub"},{"ORTH":"-"},{"ORTH":"Total"},{"ORTH":{"REGEX":"\\d"}}],"id":"TOTALAMOUNT"}
+{"label":"SUBAMOUNT","pattern":[{"ORTH":"Sub"},{"ORTH":"Total"},{"ORTH":{"REGEX":"\\d"}}],"id":"TOTALAMOUNT"}
+{"label":"LINEITEM","pattern":[{"POS":{"IN":["NUM","X"]}},{"POS":"PROPN"},{"POS":"PROPN"},{"POS":"PROPN"},{"POS":"PROPN"},{"POS":{"IN":["NUM","X"]}}],"id":"LINEITEM"}
+{"label":"LINEITEM","pattern":[{"POS":{"IN":["NUM","X"]}},{"POS":"PROPN"},{"POS":"PROPN"},{"POS":"NOUN"},{"POS":"NOUN "},{"POS":{"IN":["NUM","X"]}}],"id":"LINEITEM"}
+{"label":"LINEITEM","pattern":[{"POS":{"IN":["NUM","X"]}},{"POS":"PROPN"},{"POS":"PROPN"},{"POS":{"REGEX":"[NOUN VERB]"}},{"POS":"PROPN"},{"POS":{"IN":["NUM","X"]}}],"id":"LINEITEM"}
+{"label":"LINEITEM","pattern":[{"POS":{"IN":["NUM","X"]}},{"POS":"NOUN"},{"POS":"NOUN"},{"POS":"PROPN"},{"POS":"PROPN"},{"POS":"PROPN"},{"POS":{"IN":["NUM","X"]}}],"id":"LINEITEM"}
+{"label":"LINEITEM","pattern":[{"POS":{"IN":["NUM","X"]}},{"POS":{"IN":["NOUN","PROPN"]}},{"POS":{"IN":["NOUN","VERB"]}},{"POS":{"IN":["NUM","X"]}}],"id":"LINEITEM"}
+{"label":"LINEITEM","pattern":[{"POS":{"IN":["NUM","X"]}},{"POS":"PROPN"},{"POS":"PROPN"},{"POS":"PROPN"},{"POS":"PROPN"},{"POS":"PROPN"},{"POS":{"IN":["NUM","X"]}}],"id":"LINEITEM"}
+{"label":"LINEITEM","pattern":[{"POS":{"IN":["NUM","X"]}},{"POS":"PROPN"},{"POS":"PROPN"},{"POS":{"REGEX":"[NOUN VERB PROPN]"}},{"POS":{"IN":["NUM","X"]}}],"id":"LINEITEM"}
+{"label":"LINEITEM","pattern":[{"POS":{"IN":["NUM","X"]}},{"POS":{"IN":["NOUN","PROPN"]}},{"POS":{"IN":["NOUN","PROPN"]}},{"POS":{"IN":["NUM","X"]}}],"id":"LINEITEM"}
+{"label":"LINEITEM","pattern":[{"POS":{"IN":["NUM","X"]}},{"POS":{"IN":["NOUN","PROPN"]}},{"POS":{"IN":["NUM","X"]}}],"id":"LINEITEM"}
+{"label":"LINEITEM","pattern":[{"POS":{"IN":["NUM","X"]}},{"POS":"PROPN"},{"POS":"PROPN"},{"POS":"PROPN"},{"POS":"NOUN"},{"POS":{"IN":["NUM","X"]}}],"id":"LINEITEM"}
